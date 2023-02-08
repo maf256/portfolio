@@ -3,14 +3,16 @@ import { useState } from 'react';
 import styled from 'styled-components'
 import Logo from './Images/logo.png'
 import { RxCross1, RxHamburgerMenu } from "react-icons/rx";
+import Berger from '../components/Nav/berger.js'
 
 
 export const Navbar = () => {
 
-    const [hamberger, setHamberger] = useState(false)
+    // const [hamberger, setHamberger] = useState(false)
 
   return (
-    <Nav ham={hamberger}>
+    <Nav >
+     {/* <Nav ham={hamberger}> */}
         <img src={Logo} />
         <Menu >
             <li><a href='#'>Home</a></li>
@@ -19,11 +21,13 @@ export const Navbar = () => {
             <li><a href='#'>Projects</a></li>
             <li><a href='#'>Contact</a></li>
         </Menu>
-        <Humberger onClick={()=> setHamberger(!hamberger)} >
+        <Berger />
+
+        {/* <Humberger onClick={()=> setHamberger(!hamberger)} >
             {
                 hamberger ? <RxCross1 /> : <RxHamburgerMenu />
             }            
-        </Humberger>
+        </Humberger> */}
         
         
         
