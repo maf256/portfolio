@@ -1,15 +1,19 @@
 import styled from "styled-components"
 import { useState } from "react"
+import RightNav from "./rightNav"
 
 export default function Berger() {
     const [open, setOpen] = useState(false)
 
     return (
-        <StyledBerger open={open} onClick={() => setOpen(!open) }>
-            <div></div>
-            <div></div>
-            <div></div>
-        </StyledBerger>       
+        <>
+            <StyledBerger open={open} onClick={() => setOpen(!open) }>
+                <div></div>
+                <div></div>
+                <div></div>
+            </StyledBerger>
+            <RightNav open={open}/> 
+        </>
     )
 }
 
@@ -20,6 +24,9 @@ const StyledBerger = styled.div`
     top: 15px;
     right: 20px;
     display: none;
+    z-index: 100;
+    cursor: pointer;
+
     @media (max-width:768px){
         display: flex;
         justify-content: space-around;

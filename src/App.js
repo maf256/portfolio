@@ -7,6 +7,21 @@ function App() {
     <div>
       <Navbar />
       <h1>Majid</h1>
+      <h1>Majid</h1>
+      <h1>Majid</h1>
+      <h1>Majid</h1>
+      <h1>Majid</h1>
+      <h1>Majid</h1>
+      <h1>Majid</h1>
+      <h1>Majid</h1>
+      <h1>Majid</h1>
+      <h1>Majid</h1>
+      <h1>Majid</h1>
+      <h1>Majid</h1>
+      <h1>Majid</h1>
+      <h1>Majid</h1>
+      <h1>Majid</h1>
+      <h1>Majid</h1>
     </div>
   );
 }
