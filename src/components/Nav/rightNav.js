@@ -18,27 +18,22 @@ export default RightNav
 const Ul = styled.ul`
   list-style: none;
   display: flex;
-  flex-flow: row nowrap;
-  
+  flex-flow: row nowrap;  
   li {
     padding: 0 2vw 0 2vw;
-    border: 1px solid rgba(0,0,0,0);
-    
+    border: 1px solid rgba(0,0,0,0);    
     :hover {
         background-color: #8D9EFF;
         border: 1px solid #8D9EFF;
         border-radius: 14px 14px 14px 14px;
         transition: background-color 0.7s ease;
     }
-
    }
    a {
     text-decoration: none;
-    color: ${({ open }) => open ? '#FFE9B1' : "#112B3C"}; 
+    color: #112B3C;
     font-weight: 600;
    }
-
-
 
   @media (max-width: 768px) {
     flex-flow: column nowrap;
@@ -51,9 +46,11 @@ const Ul = styled.ul`
     width: 300px;
     padding-top: 3.5rem;
     transition: transform 0.3s ease-in-out;
-
     li {
       color: #fff;
+    }
+    a {
+      color: ${({ open }) => open ? '#FFE9B1' : "#112B3C"}; 
     }
   }
 `;
