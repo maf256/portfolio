@@ -1,5 +1,4 @@
-export default function HeaderSvgTop() {
-    
+export default function HeaderSvgRight() {
     return (
         <svg width="494" height="232" viewBox="0 0 494 232" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g filter="url(#filter0_b_64_845)">

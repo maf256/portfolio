@@ -2,6 +2,8 @@ import styled from "styled-components";
 // import Owner from "../Images/Majid2.png"
 // import HeaderImgTop from "../Images/header1.svg"
 import HeaderSvgTop from "./HeaderSvgTop";
+import HeaderSvgLeft from "./HeaderSvgLeft";
+import  HeaderSvgRight  from "./HeaderSvgRight";
 
 export default function Header() {
     return (
@@ -17,7 +19,13 @@ export default function Header() {
                 </ButtonLeft>
             </LeftSide>
             <RightSide>
-                <HeaderSvgTop />
+                <HeaderOneSvg>
+                    <HeaderSvgTop />
+                </HeaderOneSvg>
+                {/* <HeaderTwoSvg>
+                    <HeaderSvgLeft />
+                    <HeaderSvgRight />
+                </HeaderTwoSvg> */}
             </RightSide>
         </HeaderSection>
     )
@@ -33,7 +41,7 @@ const HeaderSection = styled.header`
     
     align-items: center;
     margin-top: 40px;
-    background-color: lightblue;
+    background-color: #0A2640;
     
     /* overflow-wrap: break-word; */
     `
@@ -50,15 +58,7 @@ const LeftSide = styled.div`
 // desktop land - portrate
 // tablet land - prot
 
-const RightSide = styled.div`
-    width: 50%;
-    min-width: 450px;
-    /* background-color: ; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
-`
+
 
 const TitleLeft = styled.h1`
     font-size: 25px;
@@ -92,6 +92,36 @@ const Button = styled.button`
     font-weight: 700;
     
 `
-const Svg = styled.img`
-    width: 100px;
+
+const RightSide = styled.div`
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
 `
+const HeaderOneSvg = styled.div`
+    width: 50%;
+    svg {
+        width: 100%;
+        /* min-width: 450px; */
+        height: auto;
+    }
+
+`
+ 
+
+// const HeaderTwoSvg = styled.div`
+//     width: 50%;
+//    display: flex;
+//    flex-direction: row;
+//    justify-content: center;
+//    align-items: center;
+   
+//    svg {
+//     width: 350px;
+//     height: auto;
+//    }
+// `
+
