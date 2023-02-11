@@ -21,7 +21,7 @@ const Nav = styled.nav `
     justify-content: space-between;
     align-items: center;
     padding: 0 5% 0 5%;
-    margin-top: 20px;   
+    padding-top: 20px;   
     background-color: #0A2640;
     img {
         width: 50px;

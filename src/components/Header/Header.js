@@ -40,7 +40,7 @@ const HeaderSection = styled.header`
     flex-wrap: wrap;
     
     align-items: center;
-    margin-top: 40px;
+    padding-top: 40px;
     background-color: #0A2640;
     
     /* overflow-wrap: break-word; */

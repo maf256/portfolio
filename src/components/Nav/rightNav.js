@@ -31,7 +31,7 @@ const Ul = styled.ul`
    }
    a {
     text-decoration: none;
-    color: #112B3C;
+    color: white;
     font-weight: 600;
    }
 
