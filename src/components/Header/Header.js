@@ -14,8 +14,8 @@ export default function Header() {
                     Funding handshake buyer business-to-business metrics iPad partnership. First mover advantage innovator success deployment non-disclosure.
                 </Pragraph>
                 <ButtonLeft>
-                    <Button color= "black" BgColor= "#2DCDDF">Vis prosjekter</Button>
-                    <Button color= "black" BgColor= "rgba(45, 205, 223, 0.25%)">Majid</Button>
+                    <Button color= "#d6c5c5" BgColor= "#2DCDDF">Vis prosjekter</Button>
+                    <Button color= "#d6c5c5" BgColor= "rgba(45, 205, 223, 0.25%)">Majid</Button>
                 </ButtonLeft>
             </LeftSide>
             <RightSide>
@@ -63,14 +63,15 @@ const LeftSide = styled.div`
 const TitleLeft = styled.h1`
     font-size: 25px;
     font-weight: 600;
-    color: black;
+    color: #d6c5c5;
+    /* #e3d5d */
     letter-spacing: 3px;
     margin: 20px;
 `
 const Pragraph = styled.h2`
     font-size: 20px;
     font-weight: 500;
-    color: black;
+    color: #d6c5c5;
     letter-spacing: 1px;
     margin: 15px;
 `
