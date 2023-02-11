@@ -6,7 +6,7 @@ export default function AboutMe() {
     return (
         <Container>
             <AboutText>
-                <h2>About Me</h2>
+                <h2 id='about'>About Me</h2>
                 <p>
                     Gjennom mitt arbeid med ulike webprosjekter, har jeg lært mye og kommet mye lengre innen frontend-utvikling (JavaScript, React, Redux, HTML, CSS(SCSS), RWD). Jeg er fokusert på videreutvikling i back-end (NodeJS, MERN, MoongoDB, ExpressJS) og er ikke redd for utfordringer. Målet mitt er å bli fullstack-utvikler med tiden.
                 </p>
