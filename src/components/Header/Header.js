@@ -48,7 +48,7 @@ const HeaderSection = styled.header`
 
 const LeftSide = styled.div`
     width: 50%;
-    min-width: 450px;
+    min-width: 390px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -96,6 +96,7 @@ const Button = styled.button`
 
 const RightSide = styled.div`
     width: 50%;
+    min-width: 390px;
     display: flex;
     flex-direction: column;
     justify-content: center;

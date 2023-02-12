@@ -54,6 +54,15 @@ const AboutText = styled.div`
         margin: 0 auto;
         width: 70%;
     }
+    @media (max-width:1300px) {
+       h2{
+         font-size: 22px;
+       } 
+       p {
+            font-size: 14px;
+            text-align: justify;
+       }
+    }
 `
 
 const AoutTwoPart = styled.div`
@@ -62,11 +71,14 @@ const AoutTwoPart = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
+    @media (max-width:1300px){
+        flex-direction: column;
+    }
 `
 const AboutLeftSide = styled.div`
 
     width: 50%;
-    height: 600px;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,6 +86,13 @@ const AboutLeftSide = styled.div`
         width: 85%;
         height: auto;
         border-radius: 30px;
+    }
+
+    @media (max-width:1300px) {
+       img{
+          width: 100%;
+          padding: 15px 0;
+       } 
     }
 `
 
@@ -94,10 +113,24 @@ const AboutRightSide = styled.div`
         padding-bottom:15px;
     }
     p {
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 500;
         text-align: justify;
         line-height: 25px;
         /* line-height: px; */
+    }
+    @media (max-width:1300px) {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 50px;
+        h3 {
+            font-size: 18px;
+            font-weight: 600;
+        }
+        p {
+            font-size: 13px;
+            line-height: 20px;
+        }
     }
 `
