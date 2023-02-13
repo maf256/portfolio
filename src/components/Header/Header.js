@@ -20,7 +20,7 @@ export default function Header() {
             </LeftSide>
             <RightSide>
                 <HeaderOneSvg>
-                    <HeaderSvgTop />
+                    <HeaderSvgTop fontSize="500px" />
                 </HeaderOneSvg>
                 {/* <HeaderTwoSvg>
                     <HeaderSvgLeft />
@@ -105,12 +105,7 @@ const RightSide = styled.div`
 `
 const HeaderOneSvg = styled.div`
     width: 50%;
-    svg {
-        width: 100%;
-        /* min-width: 450px; */
-        height: auto;
-    }
-
+   
 `
  
 

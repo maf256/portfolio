@@ -1,7 +1,9 @@
-export default function HeaderSvgTop() {
-    
+import styled from "styled-components"
+
+export default function HeaderSvgTop({fontSize}) {
+
     return (
-        <svg width="494" height="232" viewBox="0 0 494 232" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <Svg aria-label='xxx' fontSize={fontSize} viewBox="0 0 494 232" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g filter="url(#filter0_b_64_845)">
             <g clip-path="url(#clip0_64_845)">
             <rect x="0.14209" width="493.858" height="231.898" rx="15.0305" fill="white" fill-opacity="0.18"/>
@@ -33,7 +35,13 @@ export default function HeaderSvgTop() {
             <rect x="0.14209" width="493.858" height="231.898" rx="15.0305" fill="white"/>
             </clipPath>
             </defs>
-        </svg>
+        </Svg>
 
     )
 }
+
+const Svg = styled.svg`
+    font-size: ${({fontSize}) => fontSize ? fontSize : "100px"};
+    width: 1em;
+    height: 1em;
+`
