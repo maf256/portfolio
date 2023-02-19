@@ -4,6 +4,7 @@ import styled from "styled-components";
 import HeaderSvgTop from "./HeaderSvgTop";
 import HeaderSvgLeft from "./HeaderSvgLeft";
 import  HeaderSvgRight  from "./HeaderSvgRight";
+import Button from "../common/Button"
 
 export default function Header() {
     return (
@@ -14,8 +15,8 @@ export default function Header() {
                     Funding handshake buyer business-to-business metrics iPad partnership. First mover advantage innovator success deployment non-disclosure.
                 </Pragraph>
                 <ButtonLeft>
-                    <Button color= "#d6c5c5" BgColor= "#2DCDDF">Vis prosjekter</Button>
-                    <Button color= "#d6c5c5" BgColor= "rgba(45, 205, 223, 0.25%)">Majid</Button>
+                    <Button variant="primary">Vis prosjekter</Button>
+                    <Button variant="secondary">Majid</Button>
                 </ButtonLeft>
             </LeftSide>
             <RightSide>
@@ -78,20 +79,6 @@ const Pragraph = styled.h2`
 
 const ButtonLeft = styled.div`
     margin: 0 auto;
-`
-const Button = styled.button`
-    width: 160px;
-    height: 45px;
-    border: 2px solid black;
-    border-radius: 50px;
-    /* padding: 20px; */
-    margin: 20px;
-    background-color: ${({BgColor})=> BgColor};
-    color: ${({color}) => color};
-    text-align: center;
-    font-size: 14px;
-    font-weight: 700;
-    
 `
 
 const RightSide = styled.div`
