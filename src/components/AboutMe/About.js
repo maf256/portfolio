@@ -89,6 +89,8 @@ const AboutLeftSide = styled.div`
     }
 
     @media (max-width:1300px) {
+        width: 100%;
+
        img{
           width: 100%;
           padding: 15px 0;
@@ -102,10 +104,8 @@ const AboutRightSide = styled.div`
     justify-content: center;
     align-items: center;
     width: 50%;
-    /* height: 600px; */
     padding: 0 5%;
     text-align: center;
-    /* background-color: beige; */
     h3 {
         font-size: 22px;
         font-weight: 700;
@@ -117,7 +117,6 @@ const AboutRightSide = styled.div`
         font-weight: 500;
         text-align: justify;
         line-height: 25px;
-        /* line-height: px; */
     }
     @media (max-width:1300px) {
         width: 100%;

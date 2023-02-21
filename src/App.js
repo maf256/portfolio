@@ -15,7 +15,7 @@ function App() {
       <Header />
       <AboutMe />
       <Skills />
-
+      <Contact />
       <Footer />
       
     </div>

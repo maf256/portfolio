@@ -1,0 +1,22 @@
+const skills = [
+    {  
+        title: "Web Development",
+        detail: "HTML, CSS3, SASS (SCSS), JavaScript (ES5, ES6), jQuery, RWD, React.js, React router, Flexbox, Bootstrap, Node.js, Webpack, Redux, Express.js, MERN, MongoDB, Mongoose, Angular (basics)"
+    },
+    {
+        title: "Project Maneging",
+        detail: "Git, GitHub, BitBucket, Agile, Scrum, Jira, Trello"
+    },
+    {
+        title: "Language",
+        detail: "Norwegian, English, Polish"
+    },
+    {
+        title: "Personal",
+        detail: "Good communication with other people regardless of background. Appreciate honesty, loyalty and responsibility. Good interpersonal skills. Well organized, maintains order in the workplace."
+    },
+    {
+        title: "Other",
+        detail: "Linux OS; both use and basic administration (based on Debian)."
+    },
+]

@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import LogoComponent from '../Logo/LogoComponent.js'
-import { IoLogoTwitter,IoLogoInstagram, } from "react-icons/io";
 import {Phone, Email, FaceBook, Twitter, Linkedin, Github, Whatsapp} from '../Images/svg/Svg'
 
 export default function Footer() {
@@ -22,7 +21,6 @@ export default function Footer() {
                     <a href="mailto:info@sitedesign.no"><Email fontSize="20px" color='#d6c5c5' margin="0 15px 0 0"/>info@Sitedesign.no</a>
                     <a href="https://wa.me/+4740882869"><Whatsapp fontSize="20px" color='#d6c5c5' margin="0 15px 0 0"/> WhatsApp: +47 40882869</a>
                     <a href="https://www.osloweb.no">Firma</a>
-                    
                 </AddressFooter>
                 <SocialFooter>
                     <SocialTop>
@@ -32,11 +30,7 @@ export default function Footer() {
                     <SocialDown>
                         <a href='https://www.linkedin.com/in/farsangi'><Linkedin fontSize="35px" color='#d6c5c5' margin="18px"/></a>
                         <a href='https://github.com/maf256'><Github fontSize="35px" color='#d6c5c5' margin="18px"/></a>
-                    </SocialDown>
-                    
-                    
-                    
-                 
+                    </SocialDown>                 
                 </SocialFooter>
             </Container>
         </FooterContainer>
