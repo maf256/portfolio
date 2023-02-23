@@ -22,4 +22,7 @@ const SvgIcon = styled.svg`
     margin: ${({margin}) => margin };
     width: 1em;
     height: 1em;
+    @media (max-width: 768px) {
+        font-size: 22px;
+    }
 `

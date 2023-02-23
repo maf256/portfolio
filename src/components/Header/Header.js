@@ -1,9 +1,5 @@
 import styled from "styled-components";
-// import Owner from "../Images/Majid2.png"
-// import HeaderImgTop from "../Images/header1.svg"
 import HeaderSvgTop from "./HeaderSvgTop";
-import HeaderSvgLeft from "./HeaderSvgLeft";
-import  HeaderSvgRight  from "./HeaderSvgRight";
 import Button from "../common/Button"
 
 export default function Header() {
@@ -21,7 +17,7 @@ export default function Header() {
             </LeftSide>
             <RightSide>
                 <HeaderOneSvg>
-                    <HeaderSvgTop fontSize="500px" />
+                    <HeaderSvgTop fontSize="200px" />
                 </HeaderOneSvg>
                 {/* <HeaderTwoSvg>
                     <HeaderSvgLeft />
@@ -56,11 +52,6 @@ const LeftSide = styled.div`
     align-items: center;
     text-align: center;
 `
-// desktop land - portrate
-// tablet land - prot
-
-
-
 const TitleLeft = styled.h1`
     font-size: 25px;
     font-weight: 600;

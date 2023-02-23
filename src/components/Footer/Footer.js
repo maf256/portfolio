@@ -6,7 +6,7 @@ export default function Footer() {
     let year = new Date().getFullYear();
 
     return (
-        <FooterContainer>
+        // <FooterContainer>
             <Container>
                 <LogoFooter>
                     <TitleLogo>
@@ -16,11 +16,11 @@ export default function Footer() {
                         <p>But there isn't much literature found in the web about SEO for SVG, which leads us to write this piece to answer these 3 questions:</p>
                         <span> &#169; Copy Right {year}</span>
                 </LogoFooter>
-                <AddressFooter>
-                    <a href="tel:+4740882869"> <Phone fontSize="20px" color='#d6c5c5' margin="0 15px 0 0"/>+47 40882869</a>
-                    <a href="mailto:info@sitedesign.no"><Email fontSize="20px" color='#d6c5c5' margin="0 15px 0 0"/>info@Sitedesign.no</a>
-                    <a href="https://wa.me/+4740882869"><Whatsapp fontSize="20px" color='#d6c5c5' margin="0 15px 0 0"/> WhatsApp: +47 40882869</a>
-                    <a href="https://www.osloweb.no">Firma</a>
+                <AddressFooter className="contact">
+                    <a  href="tel:+4740882869"> <Phone fontSize="20px" color='#d6c5c5' margin="0 15px 0 0"/>+47 40882869</a>
+                    <a  href="mailto:info@sitedesign.no"><Email fontSize="20px" color='#d6c5c5' margin="0 15px 0 0"/>info@Sitedesign.no</a>
+                    <a  href="https://wa.me/+4740882869"><Whatsapp fontSize="20px" color='#d6c5c5' margin="0 15px 0 0"/> +47 40882869</a>
+                    <a  href="https://www.osloweb.no">Firma</a>
                 </AddressFooter>
                 <SocialFooter>
                     <SocialTop>
@@ -32,22 +32,79 @@ export default function Footer() {
                         <a href='https://github.com/maf256'><Github fontSize="35px" color='#d6c5c5' margin="18px"/></a>
                     </SocialDown>                 
                 </SocialFooter>
+                        <h4> &#169; Copy Right {year}</h4>
             </Container>
-        </FooterContainer>
+        // </FooterContainer>
     )
 }
 
-const FooterContainer = styled.footer`
-    width: 100%;
-    /* height: 300px; */
-    background-color: #0A2640;
+// const FooterContainer = styled.footer`
+//     /* height: 300px; */
     
-    `
+//     `
 const Container = styled.div`
     display: grid;   
     grid-template-columns: 55fr 25fr 20fr;
     grid-gap: 50px;
+    width: 100%;
+    background-color: #0A2640;
+    h4 {
+        display: none;
+    }
 
+    @media (max-width: 1000px) {
+        grid-template-columns: 40fr 30fr 30fr;
+        grid-gap: 30px;
+        div  p {
+        padding: 0;
+        width: 80%;
+        font-size: 12px;
+        }
+        div span {
+            font-size: 13px;
+        }
+        div a {
+            font-size: 14px;
+        }
+        div {
+            gap: 10px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        grid-gap:0;
+        p {
+            display: none;
+        }
+        div a {
+            justify-content: left;
+            text-align: center;
+        }
+        div span {
+            /* font-size: 20px; */
+            display: none;
+        }
+        div a {
+            font-size: 16px;
+        }
+        div {
+            gap: 2px;
+        }
+        h4 {
+            display: block;
+            text-align: center;
+            color: #d6c5c5;
+        }
+        .contact {
+            width: 209px;
+            margin: 0 auto;
+            a {
+                text-align: left;
+            }
+        }
+       
+    }
 `
 const LogoFooter = styled.div`
     display: flex;
@@ -70,6 +127,7 @@ const LogoFooter = styled.div`
     span {
         text-align: center;
     }
+
     
 
 `
@@ -97,7 +155,6 @@ const AddressFooter = styled.div`
         padding-left: 15px; 
         font-size: 18px;
         font-weight: 500;
-        
         :hover {
             background-color: #142d4c;
             color: white;
@@ -108,7 +165,7 @@ const SocialFooter = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
+    align-items: center;
     gap: 30px;
     a {
         :hover {
@@ -118,7 +175,12 @@ const SocialFooter = styled.div`
             }
         }
     }
+    @media (max-width: 768px) {
+        display: flex;
+        flex-direction: row;
+    }
 `
+
 const SocialTop = styled.div`
     display: flex;
     flex-direction: row;
@@ -128,3 +190,5 @@ const SocialDown = styled.div`
     display: flex;
     flex-direction: row;
 `
+
+

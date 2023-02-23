@@ -3,8 +3,6 @@ import { useState } from "react";
 
 export default function Skills() {
 
-    const [curSkill, setCurSkill] = useState(0)
-
     const skills = [
         {  
             title: "Web Development",
@@ -27,6 +25,8 @@ export default function Skills() {
             detail: "Linux OS; both use and basic administration (based on Debian)."
         },
     ]
+    const [curSkill, setCurSkill] = useState(0)
+
     return (
         <Container>
             <h1>Skills</h1>
@@ -34,7 +34,7 @@ export default function Skills() {
                {
                 skills.map((skill , index)  => {
                     return (
-                    <li onClick={() => {setCurSkill(index)}} key={index}>{skill.title}</li>
+                    <Item curli={curSkill==index} onClick={() => {setCurSkill(index)}} key={index}>{skill.title}</Item>
                     )
                 })
                }
@@ -85,23 +85,7 @@ const ListSkills = styled.ul`
     flex-wrap: wrap;
     cursor: pointer;
     
-    li {
-        transition: all 0.3s  ease-in;
-        :hover {
-            background: #0A2640;
-            color: white;
-            border-radius: 50px;
-        }
-        padding: 10px;
-        margin: 10px;
-        list-style: none;
-        font-size: 22px;
-        font-weight: 700;
-        letter-spacing: 2px;
-        flex-wrap: nowrap;
-        min-width: 150px;
-        text-align: center;
-    }
+
     @media (max-width: 1400px) {
       
         li {
@@ -127,6 +111,25 @@ const ListSkills = styled.ul`
       
   }
 }
+`
+const Item = styled.li`
+        transition: all 0.3s  ease-in;
+        :hover {
+            background: #0A2640;
+            color: white;
+            border-radius: 50px;
+        }
+        /* background-color: ${({ curli }) => curli ? 'blue' : 'white'}; */
+                
+        padding: 10px;
+        margin: 10px;
+        list-style: none;
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        flex-wrap: nowrap;
+        min-width: 150px;
+        text-align: center;
 `
 const Discreaption = styled.p`
     text-align: center;
