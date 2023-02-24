@@ -14,4 +14,5 @@ export const Theme = {
             color: '#d6c5c5'
         }
     }
+
 }

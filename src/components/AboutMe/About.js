@@ -85,7 +85,7 @@ const AboutLeftSide = styled.div`
     img {
         width: 85%;
         height: auto;
-        border-radius: 30px;
+        border-radius: 10px;
     }
 
     @media (max-width:1300px) {

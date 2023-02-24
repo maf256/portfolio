@@ -43,7 +43,6 @@ const FormContainer = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  /* background-color: lightblue; */
   
   form {
     display: flex;
@@ -54,7 +53,7 @@ const FormContainer = styled.div`
     background-color: #0A2640;
     width: 600px;
     height: 600px;
-    border-radius: 15px;
+    border-radius: 5px;
     h1 {
       font-size: 36px;
       color: white;
@@ -80,6 +79,7 @@ const FormContainer = styled.div`
       border: none;
       border-radius: 12px;
       padding: 10px;
+      margin: 0 4px;
     }
     textarea {
       height:120px;
@@ -95,6 +95,7 @@ const FormContainer = styled.div`
       border-radius: 12px;
       padding: 10px;
       text-align: center;
+      margin: 0 4px;
     }
   
   }

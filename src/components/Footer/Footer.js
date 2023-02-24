@@ -6,7 +6,6 @@ export default function Footer() {
     let year = new Date().getFullYear();
 
     return (
-        // <FooterContainer>
             <Container>
                 <LogoFooter>
                     <TitleLogo>
@@ -18,8 +17,8 @@ export default function Footer() {
                 </LogoFooter>
                 <AddressFooter className="contact">
                     <a  href="tel:+4740882869"> <Phone fontSize="20px" color='#d6c5c5' margin="0 15px 0 0"/>+47 40882869</a>
-                    <a  href="mailto:info@sitedesign.no"><Email fontSize="20px" color='#d6c5c5' margin="0 15px 0 0"/>info@Sitedesign.no</a>
                     <a  href="https://wa.me/+4740882869"><Whatsapp fontSize="20px" color='#d6c5c5' margin="0 15px 0 0"/> +47 40882869</a>
+                    <a  href="mailto:info@sitedesign.no"><Email fontSize="20px" color='#d6c5c5' margin="0 15px 0 0"/>info@Sitedesign.no</a>
                     <a  href="https://www.osloweb.no">Firma</a>
                 </AddressFooter>
                 <SocialFooter>
@@ -34,14 +33,9 @@ export default function Footer() {
                 </SocialFooter>
                         <h4> &#169; Copy Right {year}</h4>
             </Container>
-        // </FooterContainer>
     )
 }
 
-// const FooterContainer = styled.footer`
-//     /* height: 300px; */
-    
-//     `
 const Container = styled.div`
     display: grid;   
     grid-template-columns: 55fr 25fr 20fr;
@@ -82,7 +76,6 @@ const Container = styled.div`
             text-align: center;
         }
         div span {
-            /* font-size: 20px; */
             display: none;
         }
         div a {
@@ -95,6 +88,7 @@ const Container = styled.div`
             display: block;
             text-align: center;
             color: #d6c5c5;
+            margin-bottom: 5px;
         }
         .contact {
             width: 209px;
