@@ -3,33 +3,42 @@ import { useState } from "react";
 
 export default function Skills() {
 
+
+    
+    
     const skills = [
         {  
-            title: "Web Development",
-            detail: "HTML, CSS3, SASS (SCSS), JavaScript (ES5, ES6), jQuery, RWD, React.js, React router, Flexbox, Bootstrap, Node.js, Webpack, Redux, Express.js, MERN, MongoDB, Mongoose, Angular (basics)"
+            title: "Prosjekter",
+            detail: "– AVIOR Prosjekt (Private, Frontend, Next.js / Styledcomponents) / SITEDESIGN Prosjekt (Private, Frontend, React Styled-components)/ Eurobazzar.com / Persiarestaurant.no / Apameshop.no "
         },
         {
-            title: "Project Maneging",
-            detail: "Git, GitHub, BitBucket, Agile, Scrum, Jira, Trello"
+            title: "NØKKELKOMPETANSE",
+            detail: "HTML, CSS, JavaScript, React, Styled-components , PostgreSQL, Node.js, Express.js, Webpack, C++ , WordPress ,Shopify , cPanel."
         },
         {
-            title: "Language",
-            detail: "Norwegian, English, Polish"
+            title: "UTDANNING",
+            detail: `Master in Business strategic,
+             Bachelor in Computer engineering, 
+              Associate in Computer Science`
         },
         {
-            title: "Personal",
-            detail: "Good communication with other people regardless of background. Appreciate honesty, loyalty and responsibility. Good interpersonal skills. Well organized, maintains order in the workplace."
+            title: "SPRÅK",
+            detail: "Norwegian,English, Persian"
         },
         {
-            title: "Other",
-            detail: "Linux OS; both use and basic administration (based on Debian)."
-        },
+            title: "PERSONLIG",
+            detail: "Jeg er en hardtarbeidende utvikler med lang erfaring fra programing og IT-støtte. Gjennom veiledning av teamhar jeg oppnådd dokumenterbare resultater for økt kunnskap og effektivitet i forskjellige software- og ITsystemer. Jeg er lett å komme i kontakt med og er en intuitiv formidler som bidrar til effektivt tverrkultureltsamarbeid."
+        }
     ]
+    
+    
+    
+    
     const [curSkill, setCurSkill] = useState(0)
 
     return (
         <Container>
-            <h1>Skills</h1>
+            <h1 id="skills">Skills</h1>
             <ListSkills >
                {
                 skills.map((skill , index)  => {

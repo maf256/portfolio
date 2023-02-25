@@ -25,7 +25,7 @@ export default function Contact () {
           <h1>Contact Us</h1>
           <p>Let's send us email</p>
         </div>
-        <input type="text" name="name"  placeholder='Your Name' required />
+        <input id='contact' type="text" name="name"  placeholder='Your Name' required />
         <input type="email" name="email" placeholder='Your Email' required/>      
         <textarea name="message" placeholder='Your Massage' rows="10" cols="50"/>    
         <input type="submit" value="Send" />
