@@ -7,38 +7,36 @@ export default function Skills() {
     
     
     const skills = [
-        {  
-            title: "Prosjekter",
-            detail: "– AVIOR Prosjekt (Private, Frontend, Next.js / Styledcomponents) / SITEDESIGN Prosjekt (Private, Frontend, React Styled-components)/ Eurobazzar.com / Persiarestaurant.no / Apameshop.no "
-        },
         {
-            title: "NØKKELKOMPETANSE",
-            detail: "HTML, CSS, JavaScript, React, Styled-components , PostgreSQL, Node.js, Express.js, Webpack, C++ , WordPress ,Shopify , cPanel."
+            title: "WEBUTVIKLER",
+            detail: "HTML, CSS, JavaScript, React, Styled-components, PostgreSQL, Node.js, Express.js, Webpack, C++, WordPress, cPanel."
         },
+        {  
+            title: "ProsjektSTYRING",
+            detail: "Git, GitHub, Agile, Scrum, Jira, Trello"
+        },
+    
         {
             title: "UTDANNING",
-            detail: `Master in Business strategic,
-             Bachelor in Computer engineering, 
-              Associate in Computer Science`
+            detail: "Master in Business strategic 2013– 2015 , Bachelor in Computer engineering 2011 – 2013 , Associate in Computer Science 2001 – 2004"
         },
         {
             title: "SPRÅK",
-            detail: "Norwegian,English, Persian"
+            detail: "Norwegian B1, English A2, Persian Morsmål"
         },
         {
-            title: "PERSONLIG",
-            detail: "Jeg er en hardtarbeidende utvikler med lang erfaring fra programing og IT-støtte. Gjennom veiledning av teamhar jeg oppnådd dokumenterbare resultater for økt kunnskap og effektivitet i forskjellige software- og ITsystemer. Jeg er lett å komme i kontakt med og er en intuitiv formidler som bidrar til effektivt tverrkultureltsamarbeid."
-        }
+            title: "PERSONLIGE",
+            detail: "Jeg er en hardtarbeidende utvikler med lang erfaring fra programing og IT-støtte. Gjennom veiledning av team har jeg oppnådd dokumenterbare resultater for økt kunnskap og effektivitet i forskjellige software- og IT systemer. Jeg er lett å komme i kontakt med og er en intuitiv formidler som bidrar til effektivt tverrkulturelt samarbeid."
+        },
+    
     ]
-    
-    
     
     
     const [curSkill, setCurSkill] = useState(0)
 
     return (
         <Container>
-            <h1 id="skills">Skills</h1>
+            <h1 id="skills">Ferdigheter</h1>
             <ListSkills >
                {
                 skills.map((skill , index)  => {
@@ -128,7 +126,8 @@ const Item = styled.li`
             color: white;
             border-radius: 50px;
         }
-        /* background-color: ${({ curli }) => curli ? 'blue' : 'white'}; */
+        background-color: ${({ curli }) => curli ? '#0A2640' : 'white'};
+        color: ${({ curli }) => curli ? 'white' : 'black'};
                 
         padding: 10px;
         margin: 10px;

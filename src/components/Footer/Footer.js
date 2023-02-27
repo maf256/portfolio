@@ -12,14 +12,14 @@ export default function Footer() {
                         <LogoComponent />
                         <h2>Majid</h2>
                     </TitleLogo>
-                        <p>But there isn't much literature found in the web about SEO for SVG, which leads us to write this piece to answer these 3 questions:</p>
+                        <p>En frontend-utvikler</p>
                         <span> &#169; Copy Right {year}</span>
                 </LogoFooter>
                 <AddressFooter className="contact">
                     <a  href="tel:+4740882869"> <Phone fontSize="20px" color='#d6c5c5' margin="0 15px 0 0"/>+47 40882869</a>
                     <a  href="https://wa.me/+4740882869"><Whatsapp fontSize="20px" color='#d6c5c5' margin="0 15px 0 0"/> +47 40882869</a>
                     <a  href="mailto:info@sitedesign.no"><Email fontSize="20px" color='#d6c5c5' margin="0 15px 0 0"/>info@Sitedesign.no</a>
-                    <a  href="https://www.osloweb.no">Firma</a>
+                    <a  href="https://www.osloweb.no">Firma Osloweb</a>
                 </AddressFooter>
                 <SocialFooter>
                     <SocialTop>

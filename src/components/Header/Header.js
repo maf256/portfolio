@@ -6,13 +6,11 @@ export default function Header() {
     return (
         <HeaderSection>
             <LeftSide>
-                <TitleLeft>Majid Askarifarsangi <br/> Oslo WEb </TitleLeft>
-                <Pragraph>
-                    Funding handshake buyer business-to-business metrics iPad partnership. First mover advantage innovator success deployment non-disclosure.
-                </Pragraph>
+                <TitleLeft>Majid Askarifarsangi</TitleLeft>
+                <Pragraph>En frontend-utvikler</Pragraph>
                 <ButtonLeft>
                     <Button variant="primary">Vis prosjekter</Button>
-                    <Button variant="secondary">Majid</Button>
+                    <Button variant="secondary">kontakt meg</Button>
                 </ButtonLeft>
             </LeftSide>
             <RightSide>
@@ -35,12 +33,9 @@ const HeaderSection = styled.header`
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    
     align-items: center;
     padding-top: 40px;
     background-color: #0A2640;
-    
-    /* overflow-wrap: break-word; */
     `
 
 const LeftSide = styled.div`
@@ -56,7 +51,6 @@ const TitleLeft = styled.h1`
     font-size: 25px;
     font-weight: 600;
     color: #d6c5c5;
-    /* #e3d5d */
     letter-spacing: 3px;
     margin: 20px;
 `

@@ -1,34 +1,27 @@
 const skills = [
-    {  
-        title: "Prosjekter",
-        detail: "– AVIOR Prosjekt (Private, Frontend, Next.js / Styledcomponents) / SITEDESIGN Prosjekt (Private, Frontend, React /
-Styled-components)/ Eurobazzar.com / Persiarestaurant.no / Apameshop.no "
-    },
     {
-        title: "NØKKELKOMPETANSE",
-        detail: "HTML, CSS, JavaScript, React, Styled-components , PostgreSQL, Node.js, Express.js, Webpack, C++ , WordPress ,
-Shopify , cPanel."
+        title: "WEBUTVIKLER",
+        detail: "HTML, CSS, JavaScript, React, Styled-components, PostgreSQL, Node.js, Express.js, Webpack, C++, WordPress, cPanel."
     },
+    {  
+        title: "ProsjektSTYRING",
+        detail: "Git, GitHub, Agile, Scrum, Jira, Trello"
+    },
+
     {
         title: "UTDANNING",
-        detail: "Master in Business strategic, Bachelor in Computer engineering, Associate in Computer Science"
+        detail: "Master in Business strategic 2013– 2015 , Bachelor in Computer engineering 2011 – 2013 , Associate in Computer Science 2001 – 2004"
     },
     {
         title: "SPRÅK",
-        detail: "Norwegian, English, Persian"
+        detail: "Norwegian B1, English A2, Persian Morsmål"
     },
     {
-        title: "PERSONLIG",
+        title: "PERSONLIGE",
         detail: "Jeg er en hardtarbeidende utvikler med lang erfaring fra programing og IT-støtte. Gjennom veiledning av team
 har jeg oppnådd dokumenterbare resultater for økt kunnskap og effektivitet i forskjellige software- og IT
 systemer. Jeg er lett å komme i kontakt med og er en intuitiv formidler som bidrar til effektivt tverrkulturelt
 samarbeid."
     },
-{
-	title: "Kontakt LInker",
-        detail: "Github : 
-		Lionkedin : 
-		E-post : maf256@gmail.com 
-		Mobil : +47 40882869."
-    },
+
 ]
