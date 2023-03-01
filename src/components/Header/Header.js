@@ -9,8 +9,8 @@ export default function Header() {
                 <TitleLeft>Majid Askarifarsangi</TitleLeft>
                 <Pragraph>En frontend-utvikler</Pragraph>
                 <ButtonLeft>
-                    <Button variant="primary">Vis prosjekter</Button>
-                    <Button variant="secondary">kontakt meg</Button>
+                    <Button variant="primary" size="l">Vis prosjekter</Button>
+                    <Button variant="secondary" size="m">kontakt meg</Button>
                 </ButtonLeft>
             </LeftSide>
             <RightSide>

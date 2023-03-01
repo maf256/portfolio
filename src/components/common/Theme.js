@@ -46,7 +46,14 @@ const Color = {
     Gray800: '#424242',
     Gray900: '#212121',
     Black: '#000000',
-    White: '#FFFFFF'
+    White: '#FFFFFF',
+    //Our colors
+    Pink100: "#d6c5c5",
+    Cyan200: "#2DCDDF",
+    LightBlue300: "#08d",
+    Indigo500: "#0A2640",
+    BlueGrey400: "#303245"
+
 }
 
 export const Theme = {
@@ -64,12 +71,26 @@ export const Theme = {
             color: '#d6c5c5'
         }
     },
-    color: {
-        primaryColor: "#d6c5c5",
-        secodaryColor: "#08d",
-        thernaryColor: "#0A2640",
-        fournaryColor: "#303245",
-        fivenaryColor: ""
+    Size : {
+        s: {
+            width: "110px",
+            height: "45px",
+        },
+        m: {
+            width: "160px",
+            height: "45px",
+        },
+        l: {
+            width: "250px",
+            height: "45px",
+        }
+    },
+    Colos: {
+        Pink100: "#d6c5c5",
+        Cyan200: "#2DCDDF",
+        LightBlue300: "#08d",
+        Indigo500: "#0A2640",
+        BlueGrey400: "#303245"
     }
 }
 
@@ -77,7 +98,7 @@ export const Theme = {
     1 - #d6c5c5 = whitesmoky
     2 - #2DCDDF = lightBlue
     3 - #0A2640 = darkBlue
-    4 - blsck
+    4 - black
     5 - #303245 = darkGray (input form)
     6 - #08d = lightBlue Origin (submit form)
 
