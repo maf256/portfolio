@@ -84,7 +84,7 @@ const Container = styled.section`
 const Ul = styled.ul`
   list-style: none;
   display: flex;
-  flex-flow: row nowrap;  
+  flex-flow: row wrap;  
   @media (max-width: 768px) {
     flex-flow: column nowrap;
   }
@@ -116,6 +116,11 @@ const Discreaption = styled.p`
     width: 65%;
     font-size: 22px;
     font-weight: 500;
+    margin-top: 1.5rem;
+    border: 1px solid;
+    padding: 10px;
+    transition: all 2s ease-in-out;
+  box-shadow: 5px 10px 8px 10px #888888;
     @media (max-width: 1400px) {
         font-size: 12px;
         font-weight: 500;
