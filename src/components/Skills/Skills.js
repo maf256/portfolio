@@ -3,8 +3,6 @@ import { useState } from "react";
 
 export default function Skills() {
 
-
-    
     
     const skills = [
         {
@@ -37,7 +35,7 @@ export default function Skills() {
     return (
         <Container>
             <h1 id="skills">Ferdigheter</h1>
-            <ListSkills >
+            <Ul >
                {
                 skills.map((skill , index)  => {
                     return (
@@ -45,7 +43,7 @@ export default function Skills() {
                     )
                 })
                }
-            </ListSkills>
+            </Ul>
             <Discreaption >
                {skills[curSkill].detail}
             </Discreaption>
@@ -69,6 +67,7 @@ const Container = styled.section`
         letter-spacing: 5px;
         color: black;
         text-align: center;
+        margin-bottom: 1.5rem;
     }
      @media (max-width: 1400px) {
        h1{
@@ -77,67 +76,40 @@ const Container = styled.section`
      }
      @media (max-width: 1200px) {
        h1{
-        font-size: 20px; 
+        font-size: 30px; 
         } 
      }
 `
 
-const ListSkills = styled.ul`
-    width: 70%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-bottom:15px;
-    padding-top: 30px;
-    flex-wrap: wrap;
-    cursor: pointer;
-    
-
-    @media (max-width: 1400px) {
-      
-        li {
-            font-size: 18px;
-            font-weight: 500;
-            margin: 5px;
-        }
-        
-    }
-    @media (max-width: 1300px) {
-      
-      li {
-          font-size: 12px;
-          font-weight: 700;
-          margin: 0px;
-
-      }
-      @media (max-width: 768px) {
-      
-      li {
-        width: 100%;
-      }
-      
+const Ul = styled.ul`
+  list-style: none;
+  display: flex;
+  flex-flow: row nowrap;  
+  @media (max-width: 768px) {
+    flex-flow: column nowrap;
   }
-}
 `
+
 const Item = styled.li`
-        transition: all 0.3s  ease-in;
-        :hover {
-            background: #0A2640;
-            color: white;
-            border-radius: 50px;
-        }
-        background-color: ${({ curli }) => curli ? '#0A2640' : 'white'};
-        color: ${({ curli }) => curli ? 'white' : 'black'};
-                
-        padding: 10px;
-        margin: 10px;
-        list-style: none;
-        font-size: 22px;
-        font-weight: 700;
-        letter-spacing: 2px;
-        flex-wrap: nowrap;
-        min-width: 150px;
-        text-align: center;
+    padding: 0 2vw 0 2vw;
+    font-size :  1.25rem;
+    border: 1px solid  ${({ curli }) => curli ? '#0A2640' : 'white'}; 
+    border-radius: 14px 14px 14px 14px;
+    background-color: ${({ curli }) => curli ? '#0A2640' : 'white'};
+    color: ${({ curli }) => curli ? 'white' : 'black'};
+    min-width: 200px;
+    display: flex;
+    justify-content: center;
+    a {
+        text-decoration: none;
+        font-weight: 600;
+   }
+    :hover {
+        background-color: #8D9EFF;
+        border: 1px solid #8D9EFF;
+        border-radius: 14px 14px 14px 14px;
+        transition: background-color 0.7s ease;
+    }
 `
 const Discreaption = styled.p`
     text-align: center;
