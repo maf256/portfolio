@@ -69,28 +69,31 @@ export const Theme = {
         secondary: {
             backgroundColor: 'rgba(45, 205, 223, 0.25%)',
             color: '#d6c5c5'
-        }
-    },
-    Size : {
-        s: {
-            width: "110px",
-            height: "45px",
         },
-        m: {
-            width: "160px",
-            height: "45px",
+        Size : {
+            small: {
+                width: "110px",
+                height: "45px",
+            },
+            medium: {
+                width: "160px",
+                height: "45px",
+            },
+            large: {
+                width: "250px",
+                height: "45px",
+            },
         },
-        l: {
-            width: "250px",
-            height: "45px",
-        }
     },
+   
+   
     Colos: {
         Pink100: "#d6c5c5",
         Cyan200: "#2DCDDF",
         LightBlue300: "#08d",
         Indigo500: "#0A2640",
         BlueGrey400: "#303245"
+        // color: #3d86cf
     }
 }
 
