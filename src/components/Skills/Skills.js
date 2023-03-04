@@ -6,24 +6,24 @@ export default function Skills() {
     
     const skills = [
         {
-            title: "WEBUTVIKLER",
+            title: "Webutvikler",
             detail: "HTML, CSS, JavaScript, React, Styled-components, PostgreSQL, Node.js, Express.js, Webpack, C++, WordPress, cPanel."
         },
         {  
-            title: "ProsjektSTYRING",
-            detail: "Git, GitHub, Agile, Scrum, Jira, Trello"
+            title: "Prosjektledelse",
+            detail: "Git, GitHub, Scrum, Trello"
         },
     
         {
-            title: "UTDANNING",
+            title: "Utdanning godkjent i norge ",
             detail: "Master in Business strategic 2013– 2015 , Bachelor in Computer engineering 2011 – 2013 , Associate in Computer Science 2001 – 2004"
         },
         {
-            title: "SPRÅK",
+            title: "Språk",
             detail: "Norwegian B1, English A2, Persian Morsmål"
         },
         {
-            title: "PERSONLIGE",
+            title: "Personlige",
             detail: "Jeg er en hardtarbeidende utvikler med lang erfaring fra programing og IT-støtte. Gjennom veiledning av team har jeg oppnådd dokumenterbare resultater for økt kunnskap og effektivitet i forskjellige software- og IT systemer. Jeg er lett å komme i kontakt med og er en intuitiv formidler som bidrar til effektivt tverrkulturelt samarbeid."
         },
     
@@ -92,6 +92,7 @@ const Ul = styled.ul`
 
 const Item = styled.li`
     padding: 0 2vw 0 2vw;
+    margin: 3px;
     font-size :  1.25rem;
     border: 1px solid  ${({ curli }) => curli ? '#0A2640' : 'white'}; 
     border-radius: 14px 14px 14px 14px;
@@ -103,7 +104,7 @@ const Item = styled.li`
     a {
         text-decoration: none;
         font-weight: 600;
-   }
+    }
     :hover {
         background-color: #8D9EFF;
         border: 1px solid #8D9EFF;
@@ -119,8 +120,8 @@ const Discreaption = styled.p`
     margin-top: 1.5rem;
     border: 1px solid;
     padding: 10px;
-    transition: all 2s ease-in-out;
-  box-shadow: 5px 10px 8px 10px #888888;
+    transition: all 1s ease-in-out;
+    box-shadow: 5px 10px 8px 10px #888888;
     @media (max-width: 1400px) {
         font-size: 12px;
         font-weight: 500;

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import LogoComponent from '../Logo/LogoComponent.js'
-import {Phone, Email, FaceBook, Twitter, Linkedin, Github, Whatsapp} from '../Images/svg/Svg'
+import {Phone, Email, FaceBook, Twitter, Linkedin, Github, Whatsapp, Business} from '../Images/svg/Svg'
 
 export default function Footer() {
     let year = new Date().getFullYear();
@@ -18,8 +18,8 @@ export default function Footer() {
                 <AddressFooter className="contact">
                     <a  href="tel:+4740882869"> <Phone fontSize="20px" color='#d6c5c5' margin="0 15px 0 0"/>+47 40882869</a>
                     <a  href="https://wa.me/+4740882869"><Whatsapp fontSize="20px" color='#d6c5c5' margin="0 15px 0 0"/> +47 40882869</a>
-                    <a  href="mailto:info@sitedesign.no"><Email fontSize="20px" color='#d6c5c5' margin="0 15px 0 0"/>info@Sitedesign.no</a>
-                    <a  href="https://www.osloweb.no">Firma Osloweb</a>
+                    <a  href="mailto:info@sitedesign.no"><Email fontSize="20px" color='#d6c5c5' margin="0 15px 0 0"/>Majid@Sitedesign.no</a>
+                    <a  href="https://www.osloweb.no"><Business fontSize="20px" color='#d6c5c5' margin="0 15px 0 0"/>Firma: Osloweb</a>
                 </AddressFooter>
                 <SocialFooter>
                     <SocialTop>
