@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-// import Logo from '../Images/logo.png'
 import LogoComponent from '../Logo/LogoComponent.js'
 import Berger from './berger.js'
 
@@ -24,6 +23,6 @@ const Nav = styled.nav `
     align-items: center;
     padding: 0 5% 0 5%;
     padding-top: 20px;   
-    background-color: #0A2640;
-   
+    background-color: #0a26407a;
+    position: fixed;
 `

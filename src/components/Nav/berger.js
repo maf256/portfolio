@@ -21,7 +21,7 @@ const StyledBerger = styled.div`
     width: 2rem;
     height: 2rem;
     position: fixed;
-    top: 15px;
+    top:37px;
     right: 20px;
     display: none;
     z-index: 100;
