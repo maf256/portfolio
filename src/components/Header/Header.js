@@ -34,7 +34,7 @@ const HeaderSection = styled.header`
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-    padding-top: 40px;
+    padding-top: 120px;
     background-color: #0A2640;
     `
 
