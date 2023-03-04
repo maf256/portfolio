@@ -1,51 +1,24 @@
 import styled from "styled-components";
 import { useState } from "react";
-import Data from '../common/Data'
-export default function Skills() {
+import { Data } from "../common/Data";
 
-    
-    const skills = [
-        {
-            title: "Webutvikler",
-            detail: "HTML, CSS, JavaScript, React, Styled-components, PostgreSQL, Node.js, Express.js, Webpack, C++, WordPress, cPanel."
-        },
-        {  
-            title: "Prosjektledelse",
-            detail: "Git, GitHub, Scrum, Trello"
-        },
-    
-        {
-            title: "Utdanning godkjent i norge ",
-            detail: "Master in Business strategic 2013– 2015 , Bachelor in Computer engineering 2011 – 2013 , Associate in Computer Science 2001 – 2004"
-        },
-        {
-            title: "Språk",
-            detail: "Norwegian B1, English A2, Persian Morsmål"
-        },
-        {
-            title: "Personlige",
-            detail: "Jeg er en hardtarbeidende utvikler med lang erfaring fra programing og IT-støtte. Gjennom veiledning av team har jeg oppnådd dokumenterbare resultater for økt kunnskap og effektivitet i forskjellige software- og IT systemer. Jeg er lett å komme i kontakt med og er en intuitiv formidler som bidrar til effektivt tverrkulturelt samarbeid."
-        },
-    
-    ]
-    
+export default function Skills() {
     
     const [curSkill, setCurSkill] = useState(0)
-
     return (
         <Container>
             <h1 id="skills">Ferdigheter</h1>
             <Ul >
                {
-                skills.map((skill , index)  => {
+                Data.skills.map((skill , index)  => {
                     return (
-                    <Item curli={curSkill==index} onClick={() => {setCurSkill(index)}} key={index}>{skill.title}</Item>
+                    <Item curli={curSkill==index} onClick={() => {setCurSkill(index)}} key={index}>{skill.titleNorsk}</Item>
                     )
                 })
                }
             </Ul>
             <Discreaption >
-               {skills[curSkill].detail}
+               {Data.skills[curSkill].detailNorsk}
             </Discreaption>
         </Container>
     )

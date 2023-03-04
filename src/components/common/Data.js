@@ -1,4 +1,4 @@
-const Data = {
+export const Data = {
     skills: [
         {
             titleNorsk: "Webutvikler",
@@ -35,7 +35,3 @@ const Data = {
     
     
 }
-
-
-
-const 
