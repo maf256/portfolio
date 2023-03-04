@@ -91,7 +91,7 @@ const Container = styled.div`
             margin-bottom: 5px;
         }
         .contact {
-            width: 209px;
+            width: 222px;
             margin: 0 auto;
             a {
                 text-align: left;
