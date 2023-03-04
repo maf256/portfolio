@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { useState } from "react";
-
+import Data from '../common/Data'
 export default function Skills() {
 
     
