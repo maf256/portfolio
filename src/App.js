@@ -10,7 +10,6 @@ import Language from './components/language/Language'
 function App() {
   return (
     <div>
-      <Language />
       <Navbar />
       <Header />
       <AboutMe />
