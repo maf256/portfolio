@@ -1,36 +1,54 @@
 export const Data = {
-    skills: [
-        {
-            titleNorsk: "Webutvikler",
-            detailNorsk: "HTML, CSS, JavaScript, React, Styled-components, PostgreSQL, Node.js, Express.js, Webpack, C++, WordPress, cPanel.",
-            titleEnglish: "Web Developer",
-            detailEnglish: "HTML, CSS, JavaScript, React, Styled-components, PostgreSQL, Node.js, Express.js, Webpack, C++, WordPress, cPanel."
-        },
-        {  
-            titleNorsk: "Prosjektledelse",
-            detailNorsk: "Git, GitHub, Scrum, Trello",
-            titleEnglish: "Project Manager",
-            detailEnglish: "Git, GitHub, Scrum, Trello"
-        },
+    skills: {
+        subject: {en:'Skills', nr:'Ferdigheter'},
+        en: [
+            {
+                title: "Web Developer",
+                detail: "HTML, CSS, JavaScript, React, Styled-components, PostgreSQL, Node.js, Express.js, Webpack, C++, WordPress, cPanel."
+            },
+            {
+                title: "Project management",
+                detail: "Git, GitHub, Scrum, Trello"
+            },
+            {
+                title: "Education approved in Norway",
+                detail: "Master in Business strategic 2013– 2015 , Bachelor in Computer engineering 2011 – 2013 , Associate in Computer Science 2001 – 2004"                
+            },
+            {
+                title: "Language",
+                detail: "Norwegian B1, English A2, Persian mother tongue"
+            },
+            {
+                title: "Personal",
+                detail: "I am a hard-working developer with extensive experience in programming and IT support. Through the guidance of teams, I have achieved documentable results for increased knowledge and efficiency in various software and IT systems. I am easy to get in touch with and am an intuitive communicator who contributes to effective cross-cultural cooperation.",                
+            }
+        ],
+        nr:[
+            
+            {
+                title: "Webutvikler",
+                detail: "HTML, CSS, JavaScript, React, Styled-components, PostgreSQL, Node.js, Express.js, Webpack, C++, WordPress, cPanel.",
+            },
+            {  
+                title: "Prosjektledelse",
+                detail: "Git, GitHub, Scrum, Trello",
+            },
+        
+            {
+                title: "Utdanning godkjent i Norge",
+                detail: "Master in Business strategic 2013– 2015 , Bachelor in Computer engineering 2011 – 2013 , Associate in Computer Science 2001 – 2004",
     
-        {
-            titleNorsk: "Utdanning godkjent i Norge",
-            detailNorsk: "Master in Business strategic 2013– 2015 , Bachelor in Computer engineering 2011 – 2013 , Associate in Computer Science 2001 – 2004",
-            titleEnglish: "Education approved in Norway",
-            detailEnglish: "Master in Business strategic 2013– 2015 , Bachelor in Computer engineering 2011 – 2013 , Associate in Computer Science 2001 – 2004"
-        },
-        {
-            titleNorsk: "Språk",
-            detailNorsk: "Norwegian B1, English A2, Persian Morsmål",
-            titleEnglish: "Language",
-            detailEnglish: "Norwegian B1, English A2, Persian Morsmål"
-        },
-        {
-            titleNorsk: "Personlige",
-            detailNorsk: "Jeg er en hardtarbeidende utvikler med lang erfaring fra programing og IT-støtte. Gjennom veiledning av team har jeg oppnådd dokumenterbare resultater for økt kunnskap og effektivitet i forskjellige software- og IT systemer. Jeg er lett å komme i kontakt med og er en intuitiv formidler som bidrar til effektivt tverrkulturelt samarbeid.",
-            titleEnglish: "Personlige",
-            detailEnglish: "Jeg er en hardtarbeidende utvikler med lang erfaring fra programing og IT-støtte. Gjennom veiledning av team har jeg oppnådd dokumenterbare resultater for økt kunnskap og effektivitet i forskjellige software- og IT systemer. Jeg er lett å komme i kontakt med og er en intuitiv formidler som bidrar til effektivt tverrkulturelt samarbeid."        }    
-    ],
+            },
+            {
+                title: "Språk",
+                detail: "Norwegian B1, English A2, Persian Morsmål",
+            },
+            {
+    
+                title: "Personlige",
+                detail: "Jeg er en hardtarbeidende utvikler med lang erfaring fra programing og IT-støtte. Gjennom veiledning av team har jeg oppnådd dokumenterbare resultater for økt kunnskap og effektivitet i forskjellige software- og IT systemer. Jeg er lett å komme i kontakt med og er en intuitiv formidler som bidrar til effektivt tverrkulturelt samarbeid."        }    
+        ] 
+    },
     menu: {
         en: [
             {name: 'Home', href: '#home'},

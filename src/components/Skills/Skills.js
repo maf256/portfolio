@@ -2,23 +2,23 @@ import styled from "styled-components";
 import { useState } from "react";
 import { Data } from "../common/Data";
 
-export default function Skills() {
+export default function Skills({selectedLanguage}) {
     
     const [curSkill, setCurSkill] = useState(0)
     return (
         <Container>
-            <h1 id="skills">Ferdigheter</h1>
+            <h1 id="skills">{Data.skills.subject[selectedLanguage]}</h1>
             <Ul >
                {
-                Data.skills.map((skill , index)  => {
+                Data.skills[selectedLanguage].map((skill , index)  => {
                     return (
-                    <Item curli={curSkill===index} onClick={() => {setCurSkill(index)}} key={index}>{skill.titleNorsk}</Item>
+                    <Item curli={curSkill===index} onClick={() => {setCurSkill(index)}} key={index}>{skill.title}</Item>
                     )
                 })
                }
             </Ul>
             <Discreaption >
-               {Data.skills[curSkill].detailNorsk}
+               {Data.skills[selectedLanguage][curSkill].detail}
             </Discreaption>
         </Container>
     )

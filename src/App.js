@@ -18,7 +18,7 @@ function App() {
       <Navbar selectedLanguage={selectedLanguage} setSelectedLanguage={setSelectedLanguage}/>
       <Header />
       <AboutMe selectedLanguage={selectedLanguage} />
-      <Skills />
+      <Skills selectedLanguage={selectedLanguage} />
       <Contact />
       <Footer />
       
