@@ -12,7 +12,7 @@ export default function Skills() {
                {
                 Data.skills.map((skill , index)  => {
                     return (
-                    <Item curli={curSkill==index} onClick={() => {setCurSkill(index)}} key={index}>{skill.titleNorsk}</Item>
+                    <Item curli={curSkill===index} onClick={() => {setCurSkill(index)}} key={index}>{skill.titleNorsk}</Item>
                     )
                 })
                }

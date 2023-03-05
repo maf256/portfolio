@@ -2,15 +2,13 @@ import React from 'react'
 import styled from 'styled-components'
 import LogoComponent from '../Logo/LogoComponent.js'
 import Berger from './berger.js'
-import Language from '../language/Language.js'
 
-export const Navbar = () => {
+export const Navbar = ({selectedLanguage, setSelectedLanguage}) => {
 
   return (
     <Nav >
         <LogoComponent />
-
-        <Berger />        
+        <Berger selectedLanguage={selectedLanguage} setSelectedLanguage={setSelectedLanguage} />        
     </Nav>
   )
 }

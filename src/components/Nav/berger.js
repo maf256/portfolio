@@ -2,7 +2,7 @@ import styled from "styled-components"
 import { useState } from "react"
 import RightNav from "./rightNav"
 
-export default function Berger() {
+export default function Berger({selectedLanguage, setSelectedLanguage}) {
     const [open, setOpen] = useState(false)
 
     return (
@@ -12,7 +12,7 @@ export default function Berger() {
                 <div></div>
                 <div></div>
             </StyledBerger>
-            <RightNav open={open}/> 
+            <RightNav selectedLanguage={selectedLanguage} open={open} setSelectedLanguage={setSelectedLanguage}/> 
         </>
     )
 }

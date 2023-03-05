@@ -1,14 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Data } from '../common/Data';
+import Language from '../language/Language';
 
-const RightNav = ({ open }) => {
+
+const RightNav = ({ open,selectedLanguage, setSelectedLanguage}) => {
   return (
+    
     <Ul open={open}>
-        <li><a href='#home'>Hjem</a></li>
-        <li><a href='#about'>Om meg</a></li>
-        <li><a href='#skills'>Ferdigheter</a></li>
-        <li><a href='#'>Arbeidserfaring</a></li>
-        <li><a href='#contact'>Kontakt</a></li>
+    {
+      Data.menu[selectedLanguage].map((item, inx) =>
+      <li key={inx}><a href={item.href}>{item.name}</a></li>
+      )
+    }
+    <li><Language setSelectedLanguage={setSelectedLanguage}/></li>
     </Ul>
   )
 }

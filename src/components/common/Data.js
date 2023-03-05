@@ -32,8 +32,19 @@ export const Data = {
             detailEnglish: "Jeg er en hardtarbeidende utvikler med lang erfaring fra programing og IT-støtte. Gjennom veiledning av team har jeg oppnådd dokumenterbare resultater for økt kunnskap og effektivitet i forskjellige software- og IT systemer. Jeg er lett å komme i kontakt med og er en intuitiv formidler som bidrar til effektivt tverrkulturelt samarbeid."        }    
     ],
     menu: {
-        en: ['Home','About me', 'Ferdigheter','Arbeidserfaring','Kontakt'],
-        nr: ['Hjem','Om meg', 'Ferdigheter','Arbeidserfaring','Kontakt']
+        en: [
+            {name: 'Home', href: '#home'},
+            {name: 'About', href: '#about'},
+            {name: 'Skills', href: '#skills'},
+            {name: 'Contact', href: '#contact'},
+            ],
+        nr: [
+            {name: 'Hjem', href: '#home'},
+            {name: 'Om meg', href: '#about'},
+            {name: 'Ferdigheter', href: '#skills'},
+            {name: 'Kontakt', href: '#contact'},
+            
+        ]
     },
     header: {
         nr: {

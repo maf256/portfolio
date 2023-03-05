@@ -13,7 +13,7 @@ export default function AboutMe() {
             </AboutText>
             <AoutTwoPart>
                 <AboutLeftSide>
-                    <img src={AboutImg} alt = 'Photo' />
+                    <img src={AboutImg} alt = 'web developer' />
                 </AboutLeftSide>
                 <AboutRightSide>
                     <p>
