@@ -29,13 +29,12 @@ const Ul = styled.ul`
       appearance: none;
       background-color: transparent;
       border: none;
-      padding: 0 1em 0 0;
-      margin: 0;
       width: 100%;
       cursor: inherit;
-      /* font-family: inherit;
+      font-family: inherit;
       font-size: inherit;
-      line-height: inherit;       */
+      line-height: inherit;   
+      color: white;
     }
     padding: 0 2vw 0 2vw;
     border: 1px solid rgba(0,0,0,0);    
@@ -65,6 +64,9 @@ const Ul = styled.ul`
     transition: transform 0.3s ease-in-out;
     li {
       color: #fff;
+      select {
+        color: #FFE9B1;
+      }
     }
     a {
       color: ${({ open }) => open ? '#FFE9B1' : "#112B3C"}; 

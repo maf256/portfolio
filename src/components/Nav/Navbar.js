@@ -15,13 +15,12 @@ export const Navbar = ({selectedLanguage, setSelectedLanguage}) => {
 
 const Nav = styled.nav `
     width: 100%;
-    height: 100px;
+    height: 70px;
     display: flex; 
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 0 5% 0 5%;
-    padding-top: 20px;   
     background-color: #0a26407a;
     position: fixed;
 `
