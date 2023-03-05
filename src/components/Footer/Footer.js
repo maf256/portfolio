@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import LogoComponent from '../Logo/LogoComponent.js'
 import {Phone, Email, FaceBook, Twitter, Linkedin, Github, Whatsapp, Business} from '../Images/svg/Svg'
-
-export default function Footer() {
+import { Data } from "../common/Data.js";
+export default function Footer({selectedLanguage}) {
     let year = new Date().getFullYear();
 
     return (
@@ -12,7 +12,7 @@ export default function Footer() {
                         <LogoComponent />
                         <h2>Majid</h2>
                     </TitleLogo>
-                        <p>En frontend-utvikler</p>
+                        <p>{Data.header[selectedLanguage].detail}</p>
                         <span> &#169; Copy Right {year}</span>
                 </LogoFooter>
                 <AddressFooter className="contact">

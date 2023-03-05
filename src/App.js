@@ -20,7 +20,7 @@ function App() {
       <AboutMe selectedLanguage={selectedLanguage} />
       <Skills selectedLanguage={selectedLanguage} />
       <Contact />
-      <Footer />
+      <Footer selectedLanguage={selectedLanguage}/>
       
     </div>
   );
