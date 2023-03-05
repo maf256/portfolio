@@ -6,7 +6,6 @@ import Language from '../language/Language';
 
 const RightNav = ({ open,selectedLanguage, setSelectedLanguage}) => {
   return (
-    
     <Ul open={open}>
     {
       Data.menu[selectedLanguage].map((item, inx) =>
@@ -35,6 +34,10 @@ const Ul = styled.ul`
       font-size: inherit;
       line-height: inherit;   
       color: white;
+      :hover {
+        background-color: #8D9EFF;
+      }
+      
     }
     padding: 0 2vw 0 2vw;
     border: 1px solid rgba(0,0,0,0);    

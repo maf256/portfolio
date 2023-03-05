@@ -1,16 +1,16 @@
 import styled from "styled-components";
 import HeaderSvgTop from "./HeaderSvgTop";
 import Button from "../common/Button"
+import { Data } from "../common/Data";
 
-export default function Header() {
+export default function Header({selectedLanguage}) {
     return (
         <HeaderSection id='home'>
             <LeftSide>
-                <TitleLeft>Majid Askarifarsangi</TitleLeft>
-                <Pragraph>En frontend-utvikler</Pragraph>
+                <TitleLeft>{Data.header[selectedLanguage].subject}</TitleLeft>
+                <Pragraph>{Data.header[selectedLanguage].detail}</Pragraph>
                 <ButtonLeft>
-                    <Button variant="primary" size="medium">Vis prosjekter</Button>
-                    <Button variant="secondary" size="medium"><a href='#contact'>kontakt meg</a></Button>
+                    <Button variant="primary" size="medium"><a href='#contact'>kontakt meg</a></Button>
                 </ButtonLeft>
             </LeftSide>
             <RightSide>

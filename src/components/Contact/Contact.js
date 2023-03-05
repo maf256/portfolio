@@ -19,13 +19,13 @@ export default function Contact () {
     };  
 
   return (
-    <FormContainer>
+    <FormContainer id='contact'>
       <form ref={form} onSubmit={onSubmit}>
         <div>
           <h1>Contact Us</h1>
           <p>Let's send us email</p>
         </div>
-        <input id='contact' type="text" name="name"  placeholder='Your Name' required />
+        <input type="text" name="name"  placeholder='Your Name' required />
         <input type="email" name="email" placeholder='Your Email' required/>      
         <textarea name="message" placeholder='Your Massage' rows="10" cols="50"/>    
         <input type="submit" value="Send" />

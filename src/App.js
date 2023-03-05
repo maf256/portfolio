@@ -16,7 +16,7 @@ function App() {
   return (
     <div>
       <Navbar selectedLanguage={selectedLanguage} setSelectedLanguage={setSelectedLanguage}/>
-      <Header />
+      <Header selectedLanguage={selectedLanguage}/>
       <AboutMe selectedLanguage={selectedLanguage} />
       <Skills selectedLanguage={selectedLanguage} />
       <Contact />
