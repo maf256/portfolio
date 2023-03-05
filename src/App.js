@@ -5,11 +5,12 @@ import AboutMe from './components/AboutMe/About';
 import Skills from './components/Skills/Skills.js'
 import Footer from './components/Footer/Footer';
 import Contact from './components/Contact/Contact'
-
+import Language from './components/language/Language'
 
 function App() {
   return (
     <div>
+      <Language />
       <Navbar />
       <Header />
       <AboutMe />

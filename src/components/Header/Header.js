@@ -4,13 +4,13 @@ import Button from "../common/Button"
 
 export default function Header() {
     return (
-        <HeaderSection>
+        <HeaderSection id='home'>
             <LeftSide>
                 <TitleLeft>Majid Askarifarsangi</TitleLeft>
                 <Pragraph>En frontend-utvikler</Pragraph>
                 <ButtonLeft>
                     <Button variant="primary" size="medium">Vis prosjekter</Button>
-                    <Button variant="secondary" size="medium">kontakt meg</Button>
+                    <Button variant="secondary" size="medium"><a href='#contact'>kontakt meg</a></Button>
                 </ButtonLeft>
             </LeftSide>
             <RightSide>
@@ -64,6 +64,11 @@ const Pragraph = styled.h2`
 
 const ButtonLeft = styled.div`
     margin: 0 auto;
+    a {
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+    }
 `
 
 const RightSide = styled.div`

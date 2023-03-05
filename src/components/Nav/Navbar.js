@@ -2,13 +2,14 @@ import React from 'react'
 import styled from 'styled-components'
 import LogoComponent from '../Logo/LogoComponent.js'
 import Berger from './berger.js'
-
+import Language from '../language/Language.js'
 
 export const Navbar = () => {
 
   return (
-    <Nav id='home'>
+    <Nav >
         <LogoComponent />
+
         <Berger />        
     </Nav>
   )
