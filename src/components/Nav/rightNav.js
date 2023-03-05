@@ -13,7 +13,7 @@ const RightNav = ({ open,selectedLanguage, setSelectedLanguage}) => {
       <li key={inx}><a href={item.href}>{item.name}</a></li>
       )
     }
-    <li><Language setSelectedLanguage={setSelectedLanguage}/></li>
+      <li><Language setSelectedLanguage={setSelectedLanguage}/></li>
     </Ul>
   )
 }
@@ -25,6 +25,18 @@ const Ul = styled.ul`
   display: flex;
   flex-flow: row nowrap;  
   li {
+    select {
+      appearance: none;
+      background-color: transparent;
+      border: none;
+      padding: 0 1em 0 0;
+      margin: 0;
+      width: 100%;
+      cursor: inherit;
+      /* font-family: inherit;
+      font-size: inherit;
+      line-height: inherit;       */
+    }
     padding: 0 2vw 0 2vw;
     border: 1px solid rgba(0,0,0,0);    
     :hover {
