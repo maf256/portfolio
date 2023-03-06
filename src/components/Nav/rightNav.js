@@ -34,6 +34,12 @@ const Ul = styled.ul`
       font-size: inherit;
       line-height: inherit;   
       color: white;
+      outline: none;
+      padding: 2px;
+      :focus {
+        background-color: #8D9EFF;
+        
+      }
       :hover {
         background-color: #8D9EFF;
       }
