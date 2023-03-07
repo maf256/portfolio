@@ -66,19 +66,21 @@ export const Data = {
     },
     header: {
         nr: {
-                subject: 'Majid Askarifarsangi',
-                detail: 'En frontend utvikler'
+                subject: 'Hei, Jeg er',
+                name: "Majid",
+                detail: 'Jeg bygger ting for nettet.'
             },
         en: {
-                subject: 'Majid Askarifarsangi',
-                detail: 'A frontend developer'
+                subject: "Hi, my name is",
+                name: "Majid",
+                detail: 'I build things for the web.'
             }
     },
     About: {
         nr: {
             subject: 'Om meg',
             p: "Gjennom mitt arbeid med ulike webprosjekter, har jeg lært mye og kommet mye lengre innen frontend-utvikling (JavaScript, React, Redux, HTML, CSS(SCSS), RWD). Jeg er fokusert på videreutvikling i back-end (NodeJS, MERN, MoongoDB, ExpressJS) og er ikke redd for utfordringer. Målet mitt er å bli fullstack-utvikler med tiden.",
-            detail: 'Min store lidenskap for koding gjorde at jeg begynte å programmere da jeg gikk på videregående. Jeg har jobbet som IT-konsulent, webutvikler innen hardware og software support også. Jeg har en Associate i computer science og bachelorgrad i computer engineering. Jeg har opparbeidet meg solid kunnskap innen moderne frontend- utvikling og litt backend utvikling og metoder. Min primære tekniske kompetanse ligger i 4 år innenfor JavaScript, HTML5/CSS3 og 3 år innenfor React og Styled component. jeg har litt erfaring om PostgreSQL, Node.js, Express.js og byggeverktøy som Webpack. Jeg har også erfaring med å sette opp nettsider med WordPress og administrere AWS-server og cPanel for flere kunder. Jeg er på vei til å lære norsk. Jeg studerer b1 nivå i Voksenopplæring Sandvika og nærmere bestått det. Jeg har jobbet i 2 måneder som konsulent i Techpros og nå jobber jeg som frontend-utvikler i Perpendo AS bedrift. Jeg lærer- og tilpasser meg nye teknologier, domener og miljøer raskt. Jeg er en person som er faglig sterk, nysgjerrig og sulten på å lære mer. Jeg lærer for å finne de beste svar på problemene. Jeg søker og gir tilbakemeldinger, og lærer av både suksess og feil prøver alltid å se en problemstilling fra flere perspektiver. Jeg er initiativrik og resultatorientert med en stor grad av selvstendighet. Jeg samarbeider godt i team og motiveres av å skape resultater sammen.'            
+            detail: "Min store lidenskap for koding gjorde at jeg begynte å programmere da jeg gikk på videregående. Jeg har jobbet som IT-konsulent, webutvikler innen hardware og software support også. Jeg har en Associate i computer science og bachelorgrad i computer engineering. Jeg har opparbeidet meg solid kunnskap innen moderne frontend- utvikling og litt backend utvikling og metoder. Min primære tekniske kompetanse ligger i 4 år innenfor JavaScript, HTML5/CSS3 og 3 år innenfor React og Styled component. jeg har litt erfaring om PostgreSQL, Node.js, Express.js og byggeverktøy som Webpack. Jeg har også erfaring med å sette opp nettsider med WordPress og administrere AWS-server og cPanel for flere kunder. Jeg er på vei til å lære norsk. Jeg studerer b1 nivå i Voksenopplæring Sandvika og nærmere bestått det. Jeg har jobbet i 2 måneder som konsulent i Techpros og nå jobber jeg som frontend-utvikler i Perpendo AS bedrift. Jeg lærer- og tilpasser meg nye teknologier, domener og miljøer raskt. Jeg er en person som er faglig sterk, nysgjerrig og sulten på å lære mer. Jeg lærer for å finne de beste svar på problemene. Jeg søker og gir tilbakemeldinger, og lærer av både suksess og feil prøver alltid å se en problemstilling fra flere perspektiver. Jeg er initiativrik og resultatorientert med en stor grad av selvstendighet. Jeg samarbeider godt i team og motiveres av å skape resultater sammen."            
         },
         en: {
             subject: 'About me',

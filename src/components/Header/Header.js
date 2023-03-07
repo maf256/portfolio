@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import HeaderSvgTop from "./HeaderSvgTop";
+import HeaderSvgTop from "../Images/Majid2.png";
 import Button from "../common/Button"
 import { Data } from "../common/Data";
 
@@ -7,7 +7,8 @@ export default function Header({selectedLanguage}) {
     return (
         <HeaderSection id='home'>
             <LeftSide>
-                <TitleLeft>{Data.header[selectedLanguage].subject}</TitleLeft>
+                <Pragraph>{Data.header[selectedLanguage].subject}</Pragraph>
+                <TitleLeft> {Data.header[selectedLanguage].name}</TitleLeft>
                 <Pragraph>{Data.header[selectedLanguage].detail}</Pragraph>
                 <ButtonLeft>
                     <Button variant="primary" size="medium"><a href='#contact'>kontakt meg</a></Button>
@@ -15,7 +16,7 @@ export default function Header({selectedLanguage}) {
             </LeftSide>
             <RightSide>
                 <HeaderOneSvg>
-                    <HeaderSvgTop fontSize="200px" />
+                    <img src={HeaderSvgTop} alt='webutvikler'></img>
                 </HeaderOneSvg>
                 {/* <HeaderTwoSvg>
                     <HeaderSvgLeft />
@@ -36,30 +37,44 @@ const HeaderSection = styled.header`
     align-items: center;
     padding-top: 120px;
     background-color: #0A2640;
+    div {
+        width: 50%;
+    }
+    @media (max-width: 768px) {
+        div {
+            width: 100%
+        }
+    }
     `
 
 const LeftSide = styled.div`
-    width: 50%;
+    /* width: 50%; */
+    min-width: 390px;
+
     min-width: 390px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    padding-left: 10%;
+    @media (max-width: 768px) {
+        padding-left: 4%;
+    }
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* text-align: center; */
 `
 const TitleLeft = styled.h1`
     font-size: 25px;
     font-weight: 600;
     color: #d6c5c5;
     letter-spacing: 3px;
-    margin: 20px;
+    margin: 8px;
 `
 const Pragraph = styled.h2`
     font-size: 20px;
     font-weight: 500;
     color: #d6c5c5;
     letter-spacing: 1px;
-    margin: 15px;
+    margin: 8px;
 `
 
 const ButtonLeft = styled.div`
@@ -72,12 +87,16 @@ const ButtonLeft = styled.div`
 `
 
 const RightSide = styled.div`
-    width: 50%;
+    /* width: 50%; */
     min-width: 390px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    img {
+        width: 100%;
+        height: auto;
+    }
    
 `
 const HeaderOneSvg = styled.div`
