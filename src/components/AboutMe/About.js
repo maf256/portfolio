@@ -40,7 +40,7 @@ const AboutText = styled.div`
         font-size: 30px;
     }
     p {
-        margin: 0 auto;
+        margin: 15px auto;
         width: 70%;
     }
     @media (max-width:1300px) {
@@ -105,7 +105,7 @@ const AboutRightSide = styled.div`
         font-size: 16px;
         font-weight: 500;
         text-align: justify;
-        line-height: 25px;
+        line-height: 30px;
     }
     @media (max-width:1300px) {
         width: 100%;

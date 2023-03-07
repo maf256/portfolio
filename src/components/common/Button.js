@@ -18,7 +18,7 @@ const ButtonComponent = styled.button`
     height: 45px;
     border: 2px solid black;
     border-radius: 50px;
-    margin: 20px;
+    /* margin: 20px; */
     background-color: ${({variant})=> Theme.Button[variant].backgroundColor};
     color: ${({variant}) => Theme.Button[variant].color};
     text-align: center;

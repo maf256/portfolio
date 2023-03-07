@@ -33,7 +33,7 @@ const Container = styled.section`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 60px 0 40px 0;
+    padding: 100px 0 40px 0;
     h1 {
         font-size: 50px;
         font-weight: 500;
@@ -64,7 +64,7 @@ const Ul = styled.ul`
 `
 
 const Item = styled.li`
-    padding: 0 2vw 0 2vw;
+    padding: 2px 2vw 2px 2vw;
     margin: 3px;
     font-size :  1.25rem;
     border: 1px solid  ${({ curli }) => curli ? '#0A2640' : 'white'}; 
@@ -87,12 +87,12 @@ const Item = styled.li`
 `
 const Discreaption = styled.p`
     text-align: center;
-    width: 65%;
+    width: 70%;
     font-size: 22px;
     font-weight: 500;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
     border: 1px solid;
-    padding: 10px;
+    padding: 25px;
     transition: all 1s ease-in-out;
     box-shadow: 5px 10px 8px 10px #888888;
     @media (max-width: 1400px) {
