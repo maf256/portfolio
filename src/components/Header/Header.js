@@ -10,7 +10,7 @@ export default function Header({selectedLanguage}) {
             <LeftSide>
                 <h1>{Data.header[selectedLanguage].subject}</h1>
                 <h2>{Data.header[selectedLanguage].detail}</h2>
-                <h3> {Data.header[selectedLanguage].name}<Coffee fontSize="45px" color='#7f6666' margin="18px"/> </h3>
+                <h3> {Data.header[selectedLanguage].name} <span><Coffee fontSize="25px" color='#7f6666' margin="0px"/></span></h3>
                 <ButtonLeft>
                     <Button variant="primary" size="medium"><a href='#contact'>kontakt meg</a></Button>
                 </ButtonLeft>
@@ -27,7 +27,7 @@ export default function Header({selectedLanguage}) {
 
 const HeaderSection = styled.header`
     width: 100%;
-    min-height: 500px;
+    min-height: 550px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -41,8 +41,8 @@ const HeaderSection = styled.header`
         h1,h2,h3 {
             font-weight: 600;
             letter-spacing: 1.5px;
-            display: flex;
-            align-items: center;
+            /* display: flex;
+            align-items: center; */
             margin: 7px 0px;
             max-width: 100vw;
             
@@ -89,7 +89,7 @@ const LeftSide = styled.div`
 `
 
 const ButtonLeft = styled.div`
-    /* margin: 0 auto; */
+    margin: 5px auto;
     max-width: 100vw;
     
     a {

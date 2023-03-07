@@ -38,6 +38,7 @@ export default function Contact () {
 
 const FormContainer = styled.div`
   margin-bottom: 100px;
+  margin-top: 100px;
   width: 100%;
   display: flex;
   flex-direction: row;

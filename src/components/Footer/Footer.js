@@ -114,6 +114,7 @@ const LogoFooter = styled.div`
     }
     p {
         text-align: justify;
+        justify-content: center;
         line-height: 30px;
         font-size: 18px;
         font-weight: 500;
