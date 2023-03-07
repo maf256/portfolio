@@ -40,7 +40,7 @@ const HeaderSection = styled.header`
     div {
         width: 50%;
     }
-    @media (max-width: 768px) {
+    @media (max-width: 780px) {
         div {
             width: 100%
         }

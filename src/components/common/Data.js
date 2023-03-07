@@ -71,7 +71,7 @@ export const Data = {
                 detail: 'Jeg bygger ting for nettet.'
             },
         en: {
-                subject: "Hi, my name is",
+                subject: "Hi, My name is",
                 name: "Majid",
                 detail: 'I build things for the web.'
             }
