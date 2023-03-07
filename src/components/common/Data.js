@@ -66,13 +66,13 @@ export const Data = {
     },
     header: {
         nr: {
-                subject: 'Hei, Jeg er',
-                name: "Majid",
+                subject: 'Hei, Jeg er Majid og jeg er en webutvikler.',
+                name: "Jeg tar gjerne en digitalt prat eller møtes over en kaffekopp.",
                 detail: 'Jeg bygger ting for nettet.'
             },
         en: {
-                subject: "Hi, My name is",
-                name: "Majid",
+                subject: "I'm Majid and I'm a web developer.",
+                name: "I like to have a digital chat or meet over a cup of coffee.",
                 detail: 'I build things for the web.'
             }
     },
