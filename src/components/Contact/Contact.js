@@ -52,6 +52,7 @@ const FormContainer = styled.div`
     text-align: center;
     background-color: #0A2640;
     width: 600px;
+    max-width: 100vw;
     height: 600px;
     border-radius: 5px;
     h1 {
@@ -72,6 +73,8 @@ const FormContainer = styled.div`
     input[type=text], input[type=email], textarea {
       width: 400px;
       height: 50px;
+      max-width: 100vw;
+
       font-size: 16px;
       color: #eee;
       font-weight: 600;
@@ -96,6 +99,7 @@ const FormContainer = styled.div`
       padding: 10px;
       text-align: center;
       margin: 0 4px;
+      max-width: 100vw;
     }
   
   }
