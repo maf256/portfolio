@@ -58,7 +58,7 @@ const Ul = styled.ul`
     text-decoration: none;
     color: white;
     font-weight: 600;
-   }
+  }
 
   @media (max-width: 768px) {
     flex-flow: column nowrap;

@@ -7,19 +7,17 @@ import {Coffee} from '../Images/svg/Svg'
 export default function Header({selectedLanguage}) {
     return (
         <HeaderSection id='home'>
-            <LeftSide>
+            <Side>
                 <h1>{Data.header[selectedLanguage].subject}</h1>
                 <h2>{Data.header[selectedLanguage].detail}</h2>
                 <h3> {Data.header[selectedLanguage].name} <span><Coffee fontSize="25px" color='#7f6666' margin="0px"/></span></h3>
                 <ButtonLeft>
                     <Button variant="primary" size="medium"><a href='#contact'>kontakt meg</a></Button>
                 </ButtonLeft>
-            </LeftSide>
-            <RightSide>
-                <HeaderOneSvg>
-                    <img src={HeaderSvgTop} alt='webutvikler'></img>
-                </HeaderOneSvg>
-            </RightSide>
+            </Side>
+            <Side>
+                <img src={HeaderSvgTop} alt='webutvikler'></img>
+            </Side>
         </HeaderSection>
     )
 }
@@ -35,8 +33,6 @@ const HeaderSection = styled.header`
     padding-top: 120px;
     background-color: #0A2640;
     div {
-        width: 50%;
-        max-width: 100vw;
         
         h1,h2,h3 {
             font-weight: 600;
@@ -76,6 +72,23 @@ const HeaderSection = styled.header`
     }
     `
 
+const Side = styled.div`
+    width: 50vw;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: center;
+    justify-content: space-evenly;
+    padding: 0px 20px;
+    img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        
+    }
+`
+
 const LeftSide = styled.div`
     /* width: 50%; */
     min-width: 320px;
@@ -89,7 +102,7 @@ const LeftSide = styled.div`
 `
 
 const ButtonLeft = styled.div`
-    margin: 5px auto;
+    /* margin: 5px auto; */
     max-width: 100vw;
     
     a {
@@ -107,11 +120,7 @@ const RightSide = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    img {
-        width: 100%;
-        height: auto;
-        max-width: 100%;
-    }
+
    
 `
 const HeaderOneSvg = styled.div`
